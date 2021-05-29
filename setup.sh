@@ -50,9 +50,9 @@ echo 'alias sshs="termux-wake-lock; pkill sshd; sshd; printf '\''SSH server star
 
 echo 'alias sshk="termux-wake-unlock; pkill sshd; printf '\''SSH server was killed.\\n'\''"' >> ~/.bashrc
 
-printf "\nsetup completed."
+printf "\nsetup completed.\n"
 printf "\nUse sshs command to start SSH server,\nand sshk to kill the server.\n"
-printf "\nTermux restart required for above commands. type exit and press enter to exit or press exit in termux notification to exit."
+printf "\nTermux restart required for above commands. type exit and press enter to exit or press exit in termux notification to exit.\n"
 
 
 

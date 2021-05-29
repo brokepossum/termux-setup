@@ -46,9 +46,9 @@ done
 clear
 printf "\nPassword setup complete"
 printf "\nAdding finishing touches.."
-echo 'alias sshs="pkill sshd; sshd; printf '\''SSH server started. Hostname is '\''; ip -br -f inet address | grep -oP '\''192[\d.]+'\''"' >> ~/.bashrc
+echo 'alias sshs="termux-wake-lock; pkill sshd; sshd; printf '\''SSH server started. Hostname is '\''; ip -br -f inet address | grep -oP '\''192[\d.]+'\''"' >> ~/.bashrc
 
-echo 'alias sshk="pkill sshd; printf '\''SSH server was killed.\\n'\''"' >> ~/.bashrc
+echo 'alias sshk="termux-wake-unlock; pkill sshd; printf '\''SSH server was killed.\\n'\''"' >> ~/.bashrc
 
 echo "\nsetup completed."
 printf "\nUse sshs command to start SSH server,\nand sshk to kill the server.\n"
